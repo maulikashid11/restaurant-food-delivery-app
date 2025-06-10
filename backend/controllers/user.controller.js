@@ -18,8 +18,13 @@ export const register = async (req, res) => {
                 })
 
                 const token = jwt.sign({ email: user.email, id: user._id }, process.env.JWT_SECRET);
-                res.cookie('token', token);
-                res.json({ success: true, message: "User registered successfully.",user })
+                res.cookie('token', token, {
+                    httpOnly: true,
+                    secure: true, // only send over HTTPS
+                    sameSite: 'None', // needed for cross-origin
+                    maxAge: 3600000 // 1 hour
+                })
+                res.json({ success: true, message: "User registered successfully.", user })
             })
         })
     } catch (error) {
@@ -42,7 +47,12 @@ export const login = async (req, res) => {
         bcrypt.compare(password, user.password, (err, result) => {
             if (result) {
                 const token = jwt.sign({ email: user.email, id: user._id }, process.env.JWT_SECRET);
-                res.cookie('token', token);
+                res.cookie('token', token, {
+                    httpOnly: true,
+                    secure: true, // only send over HTTPS
+                    sameSite: 'None', // needed for cross-origin
+                    maxAge: 3600000 // 1 hour
+                })
                 res.json({ success: true, message: "User logged in successfully", user })
             }
         })
