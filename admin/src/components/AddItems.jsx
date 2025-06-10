@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { assets } from "../assets/assets"
 import { toast } from 'react-toastify'
-import { useContext } from 'react'
-import { AppContext } from '../../../frontend/src/contexts/AppContext'
 
 const AddItems = ({url}) => {
     
