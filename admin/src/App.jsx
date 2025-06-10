@@ -8,7 +8,7 @@ import { assets } from './assets/assets'
 import { ToastContainer } from 'react-toastify'
 
 function App() {
-  const url = 'http://localhost:3000'
+  const url = 'https://restaurant-food-delivery-app-dwaj.onrender.com'
 
   return (
     <>

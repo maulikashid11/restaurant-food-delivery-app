@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-    const url = 'http://localhost:3000'
+    const url = 'https://restaurant-food-delivery-app-dwaj.onrender.com'
     const [cart, setCart] = useState({})
     const [items, setItems] = useState([])
     const [user, setUser] = useState({})
