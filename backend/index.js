@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin:['https://favoritefood-three.vercel.app','https://favoritefood-admin.vercel.app/'],
+    origin:['https://favoritefood-three.vercel.app','https://favoritefood-admin.vercel.app'],
     credentials: true,
 }))
 connectToDb()
