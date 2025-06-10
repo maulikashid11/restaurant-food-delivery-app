@@ -36,8 +36,8 @@ export const createOrder = async (req, res) => {
             payment_method_types: ["card"],
             line_items: lineItems,
             mode: "payment",
-            success_url: `http://localhost:5173/payment-success?orderId=${order._id}`,
-            cancel_url: `http://localhost:5173/payment-cancel`,
+            success_url: `https://favoritefood-three.vercel.app/payment-success?orderId=${order._id}`,
+            cancel_url: `https://favoritefood-three.vercel.app/payment-cancel`,
         });
 
         res.json({ sessionId: session.id });
