@@ -27,10 +27,6 @@ const Navbar = ({ setLoginOpen }) => {
   return (
     <div className='sticky top-0 z-6 bg-white flex justify-between items-center gap-3 p-3'>
       <Link to="/" className="font-bold text-2xl">FavFood</Link>
-      <ul className='md:flex hidden text-xl gap-5 '>
-        <li><NavLink to='/' className={({ isActive }) => `${isActive ? "border-b-2 border-blue-600" : ""}`}>Home</NavLink></li>
-        <li><NavLink to='/menu' className={({ isActive }) => `${isActive ? "border-b-2 border-blue-600" : ""}`}>Menu</NavLink></li>
-      </ul>
       <div className="flex gap-3 md:gap-10 items-center">
         <Link to="/cart">
           <div className='relative'>

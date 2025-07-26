@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className='relative '>
       <div className="img relative z-1">
-        <img src={assets.header_img} alt="" />
+        <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBOklOQD4v4QChxo3sUS95NN34zI037jLgA&s"} alt="" />
       </div>
       <div className="content absolute bottom-3 left-5 z-5 text-white">
         <h1 className='text-2xl mb-2 font-bold lg:text-6xl sm:text-4xl'>Order Your <br /> Favourite Food <br /> Here</h1>
