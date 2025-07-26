@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='bg-zinc-800 text-white p-5'>
             <div className='grid grid-cols-3 justify-center  '>
                 <div className='flex flex-col gap-2'>
-                    <h1>FavFood</h1>
+                    <h1 className="font-bold text-2xl">FavFood</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores culpa magnam aspernatur.</p>
                     <div className='flex gap-2'>
                         <img src={assets.facebook_icon} alt="" />
