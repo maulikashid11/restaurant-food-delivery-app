@@ -79,19 +79,3 @@ This project is built to demonstrate **real-world application flow**, including 
 
 # Live link:
 https://favoritefood-three.vercel.app/
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/maulikashid11/favfood.git
-
-# Navigate to project directory
-cd favfood
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
